@@ -1,0 +1,100 @@
+/* Estilo global do corpo da página */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte usada no site */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove espaçamento padrão */
+    background-color: #4d03c4; /* Cor de fundo do corpo da página */
+    color: #333; /* Cor padrão do texto */
+}
+
+/* Estilo do cabeçalho */
+header {
+    display: flex; /* Usa o modelo Flexbox para organizar os elementos */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    background-color: #000000; /* Cor de fundo do cabeçalho */
+    color: white; /* Cor do texto do cabeçalho */
+    padding: 10px 20px; /* Adiciona espaçamento interno (padding) ao cabeçalho */
+}
+
+/* Estilo do título do cabeçalho */
+header h1 {
+    margin: 0; /* Remove a margem padrão */
+    color: white; /* Cor do texto do título */
+    text-align: center; /* Centraliza o texto do título */
+    flex-grow: 1; /* Faz o título ocupar o máximo de espaço disponível */
+}
+
+/* Estilo da imagem do cabeçalho */
+header img {
+    width: 10%; /* Define a largura da imagem como 10% do tamanho do contêiner */
+    border-radius: 8px; /* Adiciona bordas arredondadas à imagem */
+    margin-right: 20px; /* Espaçamento entre a imagem e o texto */
+    height: 100px; /* Define a altura da imagem */
+}
+
+/* Estilo para a área que contém os produtos */
+.container {
+    display: flex; /* Usando Flexbox para organizar os produtos de forma flexível */
+    flex-wrap: wrap; /* Permite que os itens se quebrem em múltiplas linhas, se necessário */
+    justify-content: space-around; /* Distribui os produtos igualmente, com espaçamento entre eles */
+    padding: 20px; /* Adiciona espaçamento interno à área dos produtos */
+}
+
+/* Estilo de cada produto */
+.produto {
+    background-color: white; /* Cor de fundo dos blocos de produto */
+    border-radius: 8px; /* Bordas arredondadas para os blocos de produto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave ao redor dos blocos */
+    width: 200px; /* Define a largura fixa de cada produto */
+    margin: 10px; /* Espaçamento entre os blocos de produto */
+    padding: 15px; /* Adiciona espaçamento interno nos blocos de produto */
+    text-align: center; /* Centraliza o texto dentro de cada produto */
+    transition: transform 0.3s ease; /* Adiciona transição suave ao efeito de hover */
+}
+
+/* Efeito ao passar o mouse sobre o produto (hover) */
+.produto:hover {
+    transform: scale(1.05); /* Aumenta o tamanho do produto quando o mouse passa sobre ele */
+}
+
+/* Estilo da imagem dentro de cada produto */
+.produto img {
+    width: 100%; /* Faz a imagem ocupar 100% da largura do bloco de produto */
+    border-radius: 8px; /* Adiciona bordas arredondadas à imagem do produto */
+}
+
+/* Estilo do título dentro de cada produto */
+.produto h3 {
+    font-size: 18px; /* Define o tamanho da fonte do título do produto */
+    margin: 10px 0; /* Adiciona margem acima e abaixo do título */
+}
+
+/* Estilo da descrição dentro de cada produto */
+.produto p {
+    font-size: 16px; /* Define o tamanho da fonte da descrição */
+    color: #777; /* Define a cor da descrição (cinza claro) */
+}
+
+/* Estilo do preço do produto */
+.preco {
+    font-size: 20px; /* Define o tamanho da fonte do preço */
+    color: #e67e22; /* Cor do preço (laranja) */
+    margin: 10px 0; /* Adiciona margem acima e abaixo do preço */
+}
+
+/* Estilo do botão de compra */
+.btn-compra {
+    background-color: #05f52d; /* Cor de fundo do botão (verde) */
+    color: white; /* Cor do texto do botão (branco) */
+    padding: 10px; /* Adiciona espaçamento interno ao botão */
+    border: none; /* Remove a borda do botão */
+    border-radius: 5px; /* Adiciona bordas arredondadas ao botão */
+    cursor: pointer; /* Aplica o cursor de "mãozinha" para indicar que o botão é clicável */
+    text-transform: uppercase; /* Coloca o texto do botão em maiúsculas */
+}
+
+/* Efeito de hover no botão de compra */
+.btn-compra:hover {
+    background-color: #057518; /* Altera a cor do botão para um verde mais escuro quando o mouse passa por cima */
+}
