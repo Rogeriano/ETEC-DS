@@ -1,0 +1,326 @@
+/* === Reset e base === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Georgia', serif;
+  background: #fff;
+  color: #2c2c2c;
+}
+
+/* === Cabeçalho === */
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centraliza os itens */
+  gap: 20px; /* Espaçamento entre logo, busca e título */
+  padding: 15px 30px;
+  background-color: #fff;
+  flex-wrap: wrap;
+}
+
+
+.logo {
+  height: 60px;
+  border-radius: 50%;
+}
+
+.logo-text{
+  text-align: center;
+  color: #4a004f;
+  font-size: 25px;
+}
+
+
+
+
+/* Formulário de busca */
+.search-form {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+.search-input:focus {
+  border-color: #007BFF;
+}
+
+/* === Menu principal === */
+.menu {
+  display: flex;                /* Define que o container .menu usa flexbox para organizar os filhos */
+  justify-content: center;      /* Centraliza os itens horizontalmente dentro do container */
+  flex-wrap: wrap;              /* Permite que os itens quebrem para a linha de baixo se não couberem */
+  gap: 20px;                    /* Espaçamento fixo de 20px entre os itens do menu */
+  background-color: #4a004f;   /* Cor de fundo roxa escura para o menu */
+  padding: 10px;                /* Espaçamento interno (topo, direita, baixo, esquerda) de 10px */
+}
+
+.menu a {
+  color: #fff;                  /* Cor branca para o texto dos links */
+  font-size: 14px;              /* Tamanho da fonte dos links */
+  text-decoration: none;        /* Remove o sublinhado padrão dos links */
+  padding: 5px 10px;            /* Espaçamento interno (vertical: 5px, horizontal: 10px) para facilitar o clique */
+}
+
+.menu a:hover {
+  text-decoration: underline;  /* Ao passar o mouse, adiciona sublinhado nos links para indicar interatividade */
+}
+
+
+/* === Banner === */
+.banner {
+  background: url('../imagens/los.jpg') no-repeat center center; /* Define a imagem de fundo, sem repetir, centralizada vertical e horizontalmente */
+  background-size: cover;           /* Faz a imagem de fundo cobrir todo o espaço do container, mantendo proporção */
+  height: 550px;                    /* Altura fixa de 300 pixels para o banner */
+  color: #fff;                     /* Cor do texto branca, para contraste com o fundo */
+  text-align: center;              /* Centraliza horizontalmente o texto dentro do banner */
+  display: flex;                   /* Define o container como flexbox para facilitar alinhamento */
+  align-items: center;             /* Alinha os itens (texto) verticalmente no centro do banner */
+  justify-content: center;         /* Alinha os itens (texto) horizontalmente no centro do banner */
+}
+
+
+
+
+/* === Seção "Novidades" === */
+/* === Seção "Novidades" com linha decorativa abaixo do título === */
+.novidades {
+  padding: 70px;
+  text-align: center;
+  background-color: #f9f7fc;
+  border-radius: 8px;
+  box-shadow: 0 20px 8px rgba(46, 27, 59, 0.1);
+  
+  
+}
+
+.novidades h2 {
+  font-size: 2.2rem;
+  color: #4a0073;
+}
+
+.container-produtos {
+  display: flex;
+  flex-wrap: wrap; /* permite quebrar linha se não couber */
+  gap: 20px; /* espaço entre os cards */
+  justify-content: center; /* centraliza os cards */
+}
+
+
+.produto {
+  width: 200px; /* reduzido de 220px */
+  height: 420px; /* reduzido de 360px */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #eee;
+  padding: 10px; /* reduzido de 15px */
+  border-radius: 10px; 
+  box-shadow: 0 0 10px #ddd;
+  text-align: center;
+  background: #fff;
+}
+
+.produto img {
+  width: 100%;
+  height: 1400px; /* ligeiramente reduzido */
+  object-fit: contain;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.produto h3 {
+  font-size: 0.95rem; /* reduzido de 1rem */
+  margin: 10px 0 8px;
+  color: #2e1b3b;
+}
+
+.preco {
+  font-size: 1rem; /* reduzido de 1.125rem */
+  font-weight: bold;
+  margin: 5px 0;
+  color: #000;
+}
+
+.parcelado {
+  font-size: 0.8rem; /* reduzido de 0.875rem */
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.produto button {
+  background: #3c1e4f;
+  color: #fff;
+  border: none;
+  padding: 8px; /* reduzido de 10px */
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.produto button:hover {
+  background: #593469;
+}
+
+
+
+
+/* === Apresentação === */
+/* CSS */
+.apres {
+  display: flex; /* Usa o modelo flexbox para organizar os elementos filhos em linha ou coluna */
+  flex-direction: row; /* Organiza os elementos filhos (texto e imagem) na horizontal (linha) */
+  justify-content: space-between; /* Espaça igualmente os elementos com espaço entre eles */
+  align-items: center; /* Alinha verticalmente os elementos ao centro */
+
+  padding: 30px; /* Espaçamento interno (dentro do contêiner) em todos os lados */
+  margin: auto; /* Centraliza o contêiner horizontalmente na página */
+  font-size: 1.2rem; /* Define o tamanho da fonte relativa ao tamanho base */
+  color: #dbb856; /* Define a cor do texto */
+  background: #1a1814; /* Cor de fundo escura do contêiner */
+  border: 1px solid #dbb856; /* Borda de 1px com a mesma cor dourada do texto */
+  border-radius: 8px; /* Arredonda levemente os cantos da borda */
+  box-shadow: 0 0 10px rgba(219, 184, 86, 0.1); /* Sombra suave ao redor do contêiner */
+
+}
+
+.apres-texto {
+  flex: 1; /* Ocupa metade do espaço disponível (50%) */
+  padding-right: 30px; /* Espaço à direita do texto para separar da imagem */
+  text-align: left; /* Alinha o texto à esquerda */
+}
+
+.apres-imagem {
+  flex: 1; /* Também ocupa metade do espaço disponível */
+  text-align: right; /* Alinha a imagem à direita */
+}
+
+.apres-imagem img {
+  max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho do contêiner pai */
+  height: auto; /* Mantém a proporção da imagem ao redimensionar */
+  border-radius: 8px; /* Arredonda levemente os cantos da imagem */
+}
+
+
+
+
+
+/* === Galerias === */
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding: 100px 20px;
+  box-shadow: 0 20px 8px rgba(46, 27, 59, 0.1);
+}
+.card {
+  background-color: #26263a;
+  border-radius: 8px;
+  width: 300px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease;
+  
+}
+.card:hover {
+  transform: scale(1.03);
+}
+.card img {
+  width: 100%;
+  display: block;
+}
+.card p {
+  padding: 15px;
+  font-size: 1.125rem;
+  color: #ccc;
+}
+.promocao{
+  color: #dbb856; /* Define a cor do texto */
+  background: #1a1814; /* Cor de fundo escura do contêiner */
+  border: 1px solid #dbb856; /* Borda de 1px com a mesma cor dourada do texto */
+  border-radius: 8px; /* Arredonda levemente os cantos da borda */
+  box-shadow: 0 0 10px rgba(219, 184, 86, 0.1); /* Sombra suave ao redor do contêiner */
+
+
+}
+
+/* === Títulos gerais === */
+h1, h2 {
+  text-align: center;
+  color: #0e0904;
+}
+h1 {
+  font-size: 2.5rem;
+  margin: 40px 20px;
+  color: #f0eada;
+}
+h2 {
+  font-size: 2rem;
+  margin: 40px 20px 20px;
+}
+h4{
+  text-align: center;
+  font-size: 2.5rem;
+  height: 70px;
+  padding: 70px 10px;
+  color: #f0eada;
+}
+
+/* === Links gerais === */
+a {
+  font-family: 'Georgia', serif;
+  color: #e0dce6;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* === Rodapé === */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #4a004f;;
+  color: #aaa;
+  font-size: 1rem;
+}
+
+/* === Responsividade === */
+@media (max-width: 768px) {
+  .top-bar {
+    flex-direction: column;
+    text-align: center;
+  }
+  .banner {
+    height: 200px;
+    padding: 0 20px;
+  }
+  .apres {
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  .card,
+  .produto {
+    width: 90%;
+  }
+}

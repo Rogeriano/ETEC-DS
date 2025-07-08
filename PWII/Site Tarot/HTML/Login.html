@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - Tarot Místico</title>
+  <link rel="stylesheet" href="../CSS/Login.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Bem-vindo ao Tarot Místico</h1>
+    
+
+    <form method="POST" action="../PHP/UsuarioController.php">
+      <input type="text" name="emailFormulario" placeholder="Usuário" required>
+      <input type="password" name="senhaFormulario" placeholder="Senha" required>
+      <a href="AtualizarSenha.html" class="alterar">Esqueceu a senha</a>
+      <input type="submit" name="requisicao" value="Logar"/>
+      
+    </form>
+
+    <p>Não tem uma conta? <a href="cadastro.html">Cadastre-se aqui</a></p>
+  </div>
+
+</body>
+</html>

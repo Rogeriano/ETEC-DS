@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="../CSS/Cadastro.css">
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Cadastro</h2>
+    <form method="POST" action="../PHP/UsuarioController.php">
+      <label for="nome">Nome Completo</label>
+      <input type="text" name="nomeFormulario" placeholder="Seu nome completo" required>
+
+      <label for="email">E-mail</label>
+      <input type="email" name="emailFormulario" placeholder="Seu e-mail" required>
+
+      <label for="telefone">Telefone</label>
+      <input type="tel" name="telefoneFormulario" placeholder="(XX) XXXXX-XXXX" required>
+
+      <label for="senha">Senha</label>
+      <input type="password" name="senhaFormulario" placeholder="Crie uma senha" required>
+
+       <button type="submit" name="requisicao" value="Cadastrar">Cadastrar</button>
+    </form>
+
+    <div class="logar">
+      <p>Já tem uma conta? <a href="./Login.html">Entrar</a></p>
+    </div>
+  </div>
+
+</body>
+</html>

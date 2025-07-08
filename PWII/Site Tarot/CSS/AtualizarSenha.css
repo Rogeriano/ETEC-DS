@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container do formulário */
+.form-container {
+  background-color: #ffffff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 420px;
+  transition: all 0.3s ease-in-out;
+}
+
+h2 {
+  text-align: center;
+  color: #4a004f;
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+/* Labels e campos */
+label {
+  display: block;
+  margin-top: 18px;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #333;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.2s;
+  font-size: 15px;
+}
+
+input:focus {
+  border-color: #4a004f;
+  outline: none;
+}
+
+/* Botão */
+button {
+  margin-top: 25px;
+  background-color: #4a004f;
+  color: #ffffff;
+  padding: 14px;
+  border: none;
+  width: 100%;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #6a0d6f;
+}
+
+/* Mensagem */
+.message {
+  text-align: center;
+  margin-top: 20px;
+  color: green;
+  font-size: 15px;
+}
+
+/* Responsividade */
+@media (max-width: 500px) {
+  .form-container {
+    padding: 25px 20px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+}

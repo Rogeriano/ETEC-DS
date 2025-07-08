@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    background: rgb(235, 225, 225);
+    color: #e0dce6;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza os itens */
+    gap: 20px; /* Espaçamento entre logo, busca e título */
+    padding: 15px 30px;
+    background-color: #fff;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    height: 60px;    
+    width: auto;
+    border-radius: 50%;
+  }
+
+  .logo-text{
+    text-align: center;
+    color: #4a004f;
+    font-size: 25px;
+  }
+  .menu {
+    display: flex;                /* Define que o container .menu usa flexbox para organizar os filhos */
+    justify-content: center;      /* Centraliza os itens horizontalmente dentro do container */
+    flex-wrap: wrap;              /* Permite que os itens quebrem para a linha de baixo se não couberem */
+    gap: 20px;                    /* Espaçamento fixo de 20px entre os itens do menu */
+    background-color: #4a004f;   /* Cor de fundo roxa escura para o menu */
+    padding: 10px;                /* Espaçamento interno (topo, direita, baixo, esquerda) de 10px */
+  }
+
+  .menu a {
+    color: #fff;                  /* Cor branca para o texto dos links */
+    font-size: 14px;              /* Tamanho da fonte dos links */
+    text-decoration: none;        /* Remove o sublinhado padrão dos links */
+    padding: 5px 10px;            /* Espaçamento interno (vertical: 5px, horizontal: 10px) para facilitar o clique */
+  }
+
+  .menu a:hover {
+    text-decoration: underline;  /* Ao passar o mouse, adiciona sublinhado nos links para indicar interatividade */
+  }
+
+  
+  .galeria {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  
+  .card {
+    background: rgba(38, 38, 58, 0.9);
+    padding: 15px;
+    border-radius: 8px;
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+    color: #dbb856;
+  }
+  
+  .card img {
+    height: 270px;
+    width: 200px;
+    border-radius: 8px;
+  }
+  
+  .card h3 {
+    font-size: 18px;
+    margin: 10px;
+  }
+  
+  .card p {
+    font-size: 17px;
+    margin-bottom: 10px 0;
+  }
+  
+  button {
+    background-color: #dbb856; 
+    color: #333;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    background-color: #e0dce6; 
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    background-color: #000;
+    color: #aaa;
+  }
+@media (max-width: 600px) {
+  .top-bar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .card {
+    width: 90%; /* Cards ocupam quase toda a largura da tela */
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+}
