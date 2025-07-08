@@ -1,0 +1,60 @@
+/* Estilo geral para body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container principal */
+.container-principal {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Título */
+.container-formulario h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 24px;
+}
+
+/* Inputs */
+.container-formulario input[type="text"],
+.container-formulario input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* Botões */
+.container-formulario input[type="submit"] {
+    width: 48%;
+    padding: 10px;
+    margin: 1%;
+    border: none;
+    border-radius: 8px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.container-formulario input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Responsividade para telas menores */
